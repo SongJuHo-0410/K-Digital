@@ -1,5 +1,3 @@
-import javax.swing.text.Style;
-
 public class DoWhile1Demo {
     public static void main(String[] args){
         int i  = 1;
