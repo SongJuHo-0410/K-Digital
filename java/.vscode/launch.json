@@ -1,0 +1,179 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+
+
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Array1Demo",
+            "request": "launch",
+            "mainClass": "Array1Demo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "Array2Demo",
+            "request": "launch",
+            "mainClass": "Array2Demo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListDemo",
+            "request": "launch",
+            "mainClass": "ArrayListDemo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "Circle2Demo",
+            "request": "launch",
+            "mainClass": "Circle2Demo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "Circle3Demo",
+            "request": "launch",
+            "mainClass": "Circle3Demo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "Circle4Demo",
+            "request": "launch",
+            "mainClass": "Circle4Demo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "CircleArrayDemo",
+            "request": "launch",
+            "mainClass": "CircleArrayDemo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "CircleDemo",
+            "request": "launch",
+            "mainClass": "CircleDemo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "ForEachDemo",
+            "request": "launch",
+            "mainClass": "ForEachDemo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "IncrementDemo",
+            "request": "launch",
+            "mainClass": "IncrementDemo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "LocalVariableDemo",
+            "request": "launch",
+            "mainClass": "LocalVariableDemo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "MainArgumentDemo",
+            "request": "launch",
+            "mainClass": "MainArgumentDemo",
+            "projectName": "java_debf86d3",
+            "args": ["안녕!","3"]
+        },
+        {
+            "type": "java",
+            "name": "MethodChainDemo",
+            "request": "launch",
+            "mainClass": "MethodChainDemo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "ObjectArgumentDemo",
+            "request": "launch",
+            "mainClass": "ObjectArgumentDemo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "PhoneDemo",
+            "request": "launch",
+            "mainClass": "PhoneDemo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "String1Demo",
+            "request": "launch",
+            "mainClass": "String1Demo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "String2Demo",
+            "request": "launch",
+            "mainClass": "String2Demo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "String3Demo",
+            "request": "launch",
+            "mainClass": "String3Demo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "String4Demo",
+            "request": "launch",
+            "mainClass": "String4Demo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "String5Demo",
+            "request": "launch",
+            "mainClass": "String5Demo",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "StringReverse",
+            "request": "launch",
+            "mainClass": "StringReverse",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "TriangleTest",
+            "request": "launch",
+            "mainClass": "TriangleTest",
+            "projectName": "java_debf86d3"
+        },
+        {
+            "type": "java",
+            "name": "VarArgsDemo",
+            "request": "launch",
+            "mainClass": "VarArgsDemo",
+            "projectName": "java_debf86d3"
+        }
+    ]
+}
