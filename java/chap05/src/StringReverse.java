@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Practice1 {
+public class StringReverse {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         System.out.print("문자열 입력:");
@@ -11,5 +11,6 @@ public class Practice1 {
             System.out.print(s.charAt(i-1));
             //strReverse += String.format("%c", str.charAt(i-1));
         }
+        in.close();
     }
 }
