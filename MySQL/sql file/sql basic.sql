@@ -66,4 +66,139 @@
 -- SELECT name, addr FROM usertbl where addr = '경남' or addr = '전남' or addr = '경북';
 -- SELECT name, addr FROM usertbl where addr in ('경남', '전남', '경북');
 
+-- SELECT name, height from usertbl where name like '김%';
+-- SELECT name, height from usertbl where name like '_종신';
+
+-- SELECT name, height from usertbl
+-- where height > (SELECT height from usertbl where name = '김경호');
+
+-- SELECT name, height from usertbl
+-- where height >= any (SELECT height from usertbl where addr = '경남');
+
+-- SELECT name, height from usertbl
+-- where height >= all (SELECT height from usertbl where addr = '경남');
+
+-- SELECT name, height from usertbl
+-- where height = any (SELECT height from usertbl where addr = '경남');
+
+-- SELECT name, mDate from usertbl ORDER BY mDate;
+
+-- SELECT name, mDate from usertbl ORDER BY mDate DESC;
+
+-- SELECT name, height from usertbl ORDER BY height DESC, name;
+
+-- SELECT addr from usertbl;
+-- SELECT addr from usertbl ORDER BY addr;
+-- SELECT DISTINCT addr from usertbl;
+
+-- use employees;
+-- SELECT 
+--     emp_no, hire_date
+-- FROM
+--     employees
+-- ORDER BY hire_date
+-- LIMIT 5;
+
+-- use sqldb;
+-- CREATE TABLE buytbl2 (SELECT * from buytbl);
+-- SELECT * from buytbl2;
+
+-- CREATE TABLE buytbl3 (SELECT userID, prodName from buytbl);
+-- SELECT * from buytbl3;
+
+-- SELECT userID, amount from buytbl ORDER BY userID;
+-- SELECT userID, sum(amount) from buytbl GROUP BY userID;
+-- SELECT userID as '사용자 아이디', sum(amount) as '총 구매 개수'
+-- SELECT userID as '사용자 아이디', sum(amount * price) as '총 구매액'
+-- from buytbl GROUP BY userID;
+
+-- use sqldb;
+-- SELECT avg(amount) as '평균 구매 개수' from buytbl;
+-- SELECT userID, avg(amount) as '평균 구매 개수' from buytbl GROUP BY userID;
+
+-- SELECT name, max(height), min(height) from usertbl GROUP BY name;
+
+-- SELECT name, height
+-- from usertbl
+-- where height = (SELECT max(height) from usertbl)
+-- or height = (SELECT min(height) from usertbl);
+
+-- SELECT count(*) from usertbl;
+
+-- SELECT count(mobile1) as '휴대폰이 있는 사용자' from usertbl;
+
+-- SELECT userID as '사용자', sum(price * amount) as '총구매액'
+-- from buytbl
+-- GROUP BY userID
+-- HAVING sum(price * amount) >= 1000
+-- ORDER BY sum(price * amount);
+
+-- SELECT num, groupName, sum(price * amount) as '비용'
+-- from buytbl
+-- GROUP BY groupName, num
+-- WITH ROLLUP;
+
+-- SELECT groupName, sum(price * amount) as '비용'
+-- from buytbl
+-- GROUP BY groupName
+-- WITH ROLLUP;
+
+-- dml에는 select, insert, delete, update
+-- ddl에는 create, alter, drop
+-- dcl에는 grant, revoke, deny
+
+-- use sqldb;
+-- CREATE TABLE testtbl1 (id int, userName char(3), age int);
+-- INSERT INTO testtbl1 VALUES (1, '홍길동', 25);
+-- INSERT into testtbl1(id, userName) VALUES (2, '설현');
+-- INSERT INTO testtbl1(userName, age, id) VALUES ('하니', 26, 3);
+
+-- CREATE TABLE testtbl2 
+-- (
+-- id int AUTO_INCREMENT PRIMARY KEY,
+-- userName char(3),
+-- age INT
+-- );
+-- INSERT INTO testtbl2 VALUES (null, '지민', 25);
+-- INSERT INTO testtbl2 VALUES (null, '유나', 22);
+-- INSERT INTO testtbl2 VALUES (null, '유경', 21);
+-- SELECT * from testtbl2;
+
+-- SELECT last_insert_id();
+
+-- alter TABLE testtbl2 AUTO_INCREMENT = 100;
+-- INSERT INTO testtbl2 VALUES (null, '찬미', 23);
+-- SELECT * from testtbl2;
+
+-- CREATE TABLE testtbl3
+-- (
+-- id int AUTO_INCREMENT PRIMARY KEY,
+-- userName char(3),
+-- age INT
+-- );
+-- alter TABLE testtbl3 AUTO_INCREMENT = 1000;
+-- set @@auto_increment_increment = 3;
+-- INSERT INTO testtbl3 VALUES (null, '나연', 20);
+-- INSERT INTO testtbl3 VALUES (null, '정연', 18);
+-- INSERT INTO testtbl3 VALUES (null, '모모', 19);
+-- SELECT * from testtbl3;
+
+-- CREATE TABLE testtbl4 
+-- (
+-- id int,
+-- Fname varchar(50),
+-- Lname VARCHAR(50)
+-- );
+-- INSERT INTO testtbl4
+-- SELECT emp_no, first_name, last_name
+-- from employees.employees;
+
+-- CREATE TABLE testtbl5 (SELECT emp_no, first_name, last_name from employees.employees);
+
+-- update testtbl4
+-- set Lname = '없음'
+-- where Fname = 'Kyoichi';
+
+
+
 
